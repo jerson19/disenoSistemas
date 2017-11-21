@@ -9,7 +9,7 @@
                 })
                 .when('/home',{
                     templateUrl: 'home/home.html',
-                    controller: 'homeCtrl'
+                    controller: 'mainCtrl'
                 })
                 .otherwise({
                     redirectTo: '/'
@@ -18,7 +18,7 @@
     ]);
     App.controller('mainCtrl',
         function ($scope) {
-            $scope.mensaje= '<h1>esto es una prueba</h1>';
+            $scope.mensaje= '<h1>esto es una prueba asdasd </h1>';
     });
 
 }(angular));
