@@ -9,7 +9,7 @@
                     controller: 'loginCtrl'
                 })
                 .when('/home',{
-                    templateUrl: 'home/home.html',
+                    templateUrl: 'home/vidaycomida/home.html',
                     controller: 'homeCtrl'
                 })
                 .otherwise({
