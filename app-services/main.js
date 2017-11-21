@@ -5,11 +5,12 @@
         function ($routeProvider) {
             $routeProvider
                 .when('/',{
-                    templateUrl: 'login/login.html'
+                    templateUrl: 'login/login.html',
+                    controller: 'loginCtrl'
                 })
                 .when('/home',{
                     templateUrl: 'home/home.html',
-                    controller: 'mainCtrl'
+                    controller: 'homeCtrl'
                 })
                 .otherwise({
                     redirectTo: '/'

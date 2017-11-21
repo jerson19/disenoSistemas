@@ -1,7 +1,8 @@
 (function (angular) {
     'use strict';
     angular.module('main')
-        .controller('homeCtrl',['$scope',function (s) {
-            s.mensaje= '<h1>esto es una prueba</h1>';
-        }]);
+        .controller('homeCtrl',
+        function ($scope) {
+            $scope.mensaje= '<h1> Anthony se la come doblada </h1>';
+        });
 })(angular);

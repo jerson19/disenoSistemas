@@ -1,3 +1,57 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño de Sistemas</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        table, th , td  {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
 
-    <div>estamos en home</div>
-    <div id="mensaje"></div>
+<body ng-controller="sismosCrtl">
+<div class="container">
+    <div class="page-header">
+        <h1>SISTEMAS DISTRIBUIDOS <small>Grupo N°</small></h1>
+    </div>
+</div>
+<!--<div ng-include="'views/header.html'"></div>-->
+<div ng-include="'views/navbar.html'"></div>
+
+
+<div class="row">
+
+    <div class="col-md-3" style="background-color: white">
+    </div>
+    <div class="col-md-6">
+        <div ng-bind-html="mensaje"></div>
+        <table class="table table-hover table-bordered">
+            <thead>
+            <tr class="info">
+                <th style='border:3px solid #FFF;' class="info">Nivel por color</th>
+                <th style='border:1px solid #FFF;'>Lugar</th>
+                <th style='border:1px solid #FFF;'>Magnitud</th>
+                <th style='border:1px solid #FFF;'>Hora</th>
+            </tr>
+            </thead>
+            <tbody ng-bind-html="lista">
+            </tbody>
+        </table>
+
+    </div>
+    <div class="col-md-3">
+
+    </div>
+</div>
+
+
+
+<!-- <p ng-bind-html="mensaje"></p>-->
+
+<div ng-include="'views/footer.html'"></div>
+<!-- hojas de estilo para el proyecto-->
+
+</body>
